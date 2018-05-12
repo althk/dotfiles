@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 sudo apt-get install -y curl
 sudo apt-get install -y software-properties-common

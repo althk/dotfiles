@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 GO_VERSION="go1.9.3"  # Figure out how to keep this updated.
 GO_DL_NAME="$GO_VERSION.linux-amd64.tar.gz"
