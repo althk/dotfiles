@@ -22,7 +22,7 @@ The only software dependency is git (although strictly speaking, the repo can be
 ```shell
 $ sudo apt-get install -y git
 $ git clone https://github.com/althk/dotfiles.git ~/.dotfiles
-$ . ~/.dotfiles/setup.sh
+$ ~/.dotfiles/setup.sh
 ```
 
 ## References

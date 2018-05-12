@@ -41,6 +41,6 @@ bindkey -M vicmd '^p' history-beginning-search-backward
 
 for DOTFILE in "$HOME/.dotfiles/shell/.{functions,env,alias}"; do
 	[ -f "$DOTFILE" ] && . "$DOTFILE"
-fi
+done
 
 ###############################################################################
