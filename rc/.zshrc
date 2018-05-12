@@ -39,8 +39,6 @@ bindkey -M vicmd '^p' history-beginning-search-backward
 ###############################################################################
 # Load dotfiles
 
-for DOTFILE in "$HOME/.dotfiles/shell/.{functions,env,alias}"; do
-	[ -f "$DOTFILE" ] && . "$DOTFILE"
-done
+source $HOME/.dotfiles/shell/.{functions,env,alias}
 
 ###############################################################################
