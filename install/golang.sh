@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GO_VERSION="go1.10.3"  # Figure out how to keep this updated.
+GO_VERSION="go1.11"  # Figure out how to keep this updated.
 GO_DL_NAME="$GO_VERSION.linux-amd64.tar.gz"
 
 echo "Installing golang ($GO_VERSION)"
