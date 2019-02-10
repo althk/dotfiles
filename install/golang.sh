@@ -1,11 +1,11 @@
 #!/bin/bash
 
-GO_VERSION="go1.11"  # Figure out how to keep this updated.
+GO_VERSION="go1.11.5"  # Figure out how to keep this updated.
 GO_DL_NAME="$GO_VERSION.linux-amd64.tar.gz"
 
 echo "Installing golang ($GO_VERSION)"
 
-GO_INSTALL_DIR=`${GOROOT/%go/}`
+GO_INSTALL_DIR="${GOROOT/%go/}"
 [ -n "$GO_INSTALL_DIR" ] || GO_INSTALL_DIR="$HOME/opt/"
 
 wget https://dl.google.com/go/"$GO_DL_NAME" -O "/tmp/$GO_DL_NAME"
