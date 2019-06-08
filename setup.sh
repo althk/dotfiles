@@ -24,5 +24,6 @@ $DOTFILES_DIR/install/utils.sh
 $DOTFILES_DIR/install/vscode.sh
 $DOTFILES_DIR/install/node.sh
 $DOTFILES_DIR/install/golang.sh
+$DOTFILES_DIR/install/dart.sh
 
 
