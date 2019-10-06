@@ -6,3 +6,10 @@ sudo sh -c 'curl https://storage.googleapis.com/download.dartlang.org/linux/debi
 
 sudo apt-get update
 sudo apt-get install dart
+
+echo '# Dart paths' >> "${DOTFILES_DIR}/shell/.env"
+echo 'export DART_HOME="/usr/lib/dart"' >> "${DOTFILES_DIR}/shell/.env"
+echo 'export PATH="$PATH:$DART_HOME/bin"' >> "${DOTFILES_DIR}/shell/.env"
+echo '' >> "${DOTFILES_DIR}/shell/.env"
+
+source "${DOTFILES_DIR}/shell/.env"

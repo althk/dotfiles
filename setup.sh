@@ -15,15 +15,15 @@ lh() {
   ln -svf $DOTFILES_DIR/$1 ~
 }
 
+$DOTFILES_DIR/install/utils.sh
+$DOTFILES_DIR/install/golang.sh
+$DOTFILES_DIR/install/dart.sh
+$DOTFILES_DIR/install/vscode.sh
+$DOTFILES_DIR/install/node.sh
+
 lh rc/.zshrc
 lh git/.gitconfig
 lh git/.gitignore_global
 lh tmux/.tmux.conf
-
-$DOTFILES_DIR/install/utils.sh
-$DOTFILES_DIR/install/vscode.sh
-$DOTFILES_DIR/install/node.sh
-$DOTFILES_DIR/install/golang.sh
-$DOTFILES_DIR/install/dart.sh
 
 
