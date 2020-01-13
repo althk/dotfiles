@@ -16,6 +16,11 @@ lh() {
 }
 
 $DOTFILES_DIR/install/utils.sh
+
+# utils.sh installs zsh, update shell of user to zsh
+echo "Updating $USER's shell to zsh"
+[ -e /usr/bin/zsh ] && sudo usermod -s /usr/bin/zsh $USER
+
 $DOTFILES_DIR/install/golang.sh
 $DOTFILES_DIR/install/dart.sh
 $DOTFILES_DIR/install/vscode.sh

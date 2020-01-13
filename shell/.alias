@@ -30,3 +30,5 @@ alias nup="npm update"
 alias nrn="rm -r node_modules && npm install"
 alias ncd="npm-check -su"
 
+alias idea="~/opt/idea/bin/idea.sh"
+alias studio="~/opt/android-studio/bin/studio.sh"
