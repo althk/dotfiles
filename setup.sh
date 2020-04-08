@@ -24,7 +24,7 @@ echo "Updating $USER's shell to zsh"
 $DOTFILES_DIR/install/golang.sh
 $DOTFILES_DIR/install/dart.sh
 $DOTFILES_DIR/install/vscode.sh
-$DOTFILES_DIR/install/node.sh
+$DOTFILES_DIR/install/protoc.sh
 
 lh rc/.zshrc
 lh git/.gitconfig
