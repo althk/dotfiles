@@ -1,7 +1,7 @@
 # dotfiles
-dotfiles for personal dev environment (Ubuntu x64). Simple and basic.
+dotfiles for personal dev environment (Debian x64). Simple and basic.
 
-Environment: Ubuntu/Debian-based x64
+Environment: Debian (Testing) x64
 
 ## Layout
 - dotfiles
