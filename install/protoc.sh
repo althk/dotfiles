@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PROTOC_VERSION="3.11.4"  # Figure out how to keep this updated.
+PROTOC_VERSION="3.17.3"  # Figure out how to keep this updated.
 PROTOC_DL_NAME="protoc-$PROTOC_VERSION-linux-x86_64.zip"
 
 export PROTOC_BASE="$HOME/opt"
@@ -18,9 +18,9 @@ echo "Creating symlink for ${PROTOC_INSTALL_DIR} as $PROTOC_BASE/protoc"
 ln -sr $PROTOC_INSTALL_DIR $PROTOC_BASE/protoc
 
 DOTFILES_DIR="$HOME/.dotfiles"
-echo '# protoc paths' >> "${DOTFILES_DIR}/shell/.env"
-echo 'export PROTOC_PATH="$HOME/protoc"' >> "${DOTFILES_DIR}/shell/.env"
-echo 'export PATH="$PATH:$PROTOC_PATH/bin"' >> "${DOTFILES_DIR}/shell/.env"
-echo '' >> "${DOTFILES_DIR}/shell/.env"
+echo '# protoc paths' >> "${DOTFILES_DIR}/shell/.paths"
+echo 'export PROTOC_PATH="$HOME/protoc"' >> "${DOTFILES_DIR}/shell/.paths"
+echo 'export PATH="$PATH:$PROTOC_PATH/bin"' >> "${DOTFILES_DIR}/shell/.paths"
+echo '' >> "${DOTFILES_DIR}/shell/.paths"
 
-source "${DOTFILES_DIR}/shell/.env"
+source "${DOTFILES_DIR}/shell/.paths"

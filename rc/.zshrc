@@ -39,10 +39,11 @@ bindkey -M vicmd '^p' history-beginning-search-backward
 ###############################################################################
 # Load dotfiles
 
-for i in functions env alias; do
+for i in functions env alias gcloud; do
 	[ -e $HOME/.dotfiles/shell/.$i ] && source $HOME/.dotfiles/shell/.$i
 done
 
 ###############################################################################
 
-export PATH="${PATH}"
+xmodmap -e 'keycode 119 = VoidSymbol'  # Disable "rage delete" on my current laptop
+

@@ -22,9 +22,10 @@ echo "Updating $USER's shell to zsh"
 [ -e /usr/bin/zsh ] && sudo usermod -s /usr/bin/zsh $USER
 
 $DOTFILES_DIR/install/golang.sh
-$DOTFILES_DIR/install/dart.sh
+# $DOTFILES_DIR/install/dart.sh  # Skip dart for now; it is included in Flutter
 $DOTFILES_DIR/install/vscode.sh
 $DOTFILES_DIR/install/protoc.sh
+$DOTFILES_DIR/install/flutter.sh
 
 lh rc/.zshrc
 lh git/.gitconfig
