@@ -31,5 +31,6 @@ lh rc/.zshrc
 lh git/.gitconfig
 lh git/.gitignore_global
 lh tmux/.tmux.conf
+lh shell/.paths
 
 
