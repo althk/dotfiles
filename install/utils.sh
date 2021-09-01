@@ -6,5 +6,9 @@ sudo apt-get install -y gnupg2 seahorse
 sudo apt-get install -y apt-file
 sudo apt-get install -y zsh-common tmux vim
 sudo apt-get install -y meld
+sudo apt-get install -y \
+    apt-transport-https \
+    ca-certificates \
+    lsb-release
 
 
