@@ -17,7 +17,6 @@ wget https://dl.google.com/go/"$GO_DL_NAME" -O "/tmp/$GO_DL_NAME"
 [ -d $GO_INSTALL_DIR ] || mkdir -p $GO_INSTALL_DIR
 tar -zxf "/tmp/$GO_DL_NAME" -C $GO_INSTALL_DIR
 
-exit 0
 
 DOTFILES_DIR="$HOME/.dotfiles"
 echo '# Golang paths' >> "${DOTFILES_DIR}/shell/.paths"
