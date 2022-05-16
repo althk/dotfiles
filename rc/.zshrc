@@ -45,5 +45,4 @@ done
 
 ###############################################################################
 
-xmodmap -e 'keycode 119 = VoidSymbol'  # Disable "rage delete" on my current laptop
-
+plugins=(git docker)
