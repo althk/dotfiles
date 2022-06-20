@@ -6,12 +6,14 @@
 zstyle :compinstall filename '/home/harish/.zshrc'
 zstyle ':completion:*' rehash true
 
-setopt autocd autolist automenu extendedglob
+setopt autocd autolist automenu extendedglob sharehistory
 unsetopt beep listambiguous
-
 
 autoload -Uz compinit
 compinit
+
+setopt sharehistory
+fc -ARI
 
 ###############################################################################
 ###############################################################################
