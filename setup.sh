@@ -9,7 +9,7 @@ if [[ "${DOTFILES_DIR}" = "." ]]; then
 	DOTFILES_DIR="${PWD}"
 fi
 echo "DOTFILES_DIR: $DOTFILES_DIR"
-export DOTFILES_DIR
+export DOTFILES_DIR=$DOTFILES_DIR
 
 lh() {
   ln -svf $DOTFILES_DIR/$1 ~
