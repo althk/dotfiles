@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt-get install -y curl
+sudo apt-get install -y curl git git-flow
 sudo apt-get install -y software-properties-common
 sudo apt-get install -y gnupg2 seahorse
 sudo apt-get install -y apt-file
@@ -13,7 +13,9 @@ sudo apt-get install -y \
     lsb-release
 
 # setup py3 venv
-mkdir -p $HOME/opt/py3venv
-python3 -m venv $HOME/opt/py3venv
-echo "# PY3 venv paths" >> $HOME/.dotfiles/shell/.paths
-export PATH=$HOME/opt/py3venv/bin:$PATH >> $HOME/.dotfiles/shell/.paths
+PY3VENV="$HOME/opt/py3venv"
+mkdir -p $PY3VENV
+python3 -m venv $PY3VENV
+echo '# PY3 venv' >> $HOME/.dotfiles/shell/.paths
+echo 'source $PY3VENV/bin/activate' >> $HOME/.dotfiles/shell/.paths
+echo '' >> $HOME/.dotfiles/shell/.paths
