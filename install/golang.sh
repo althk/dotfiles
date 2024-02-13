@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GO_VERSION="go1.20.1"  # Figure out how to keep this updated.
+GO_VERSION="go1.22.0"  # Figure out how to keep this updated.
 GO_DL_NAME="$GO_VERSION.linux-amd64.tar.gz"
 
 export GOPATH="$HOME/.go"
