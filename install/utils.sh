@@ -11,6 +11,9 @@ sudo apt-get install -y \
     apt-transport-https \
     ca-certificates \
     lsb-release
+sudo apt install fonts-firacode fonts-lato fonts-noto-color-emoji \
+	fonts-noto-mono fonts-roboto fonts-dejavu fonts-open-sans
+sudo apt install papirus-icon-theme materia-gtk-theme
 
 # setup py3 venv
 PY3VENV="$HOME/opt/py3venv"
