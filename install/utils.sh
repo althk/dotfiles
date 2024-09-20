@@ -16,9 +16,9 @@ sudo apt install fonts-firacode fonts-lato fonts-noto-color-emoji \
 sudo apt install papirus-icon-theme materia-gtk-theme
 
 # setup py3 venv
-PY3VENV="$HOME/opt/py3venv"
+PY3VENV="$HOME/opt/venv/default-venv"
 mkdir -p $PY3VENV
 python3 -m venv $PY3VENV
-echo '# PY3 venv' >> $HOME/.dotfiles/shell/.paths
+echo '# PY3 venv (default)' >> $HOME/.dotfiles/shell/.paths
 echo 'source $PY3VENV/bin/activate' >> $HOME/.dotfiles/shell/.paths
 echo '' >> $HOME/.dotfiles/shell/.paths
