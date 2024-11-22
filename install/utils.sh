@@ -3,7 +3,7 @@
 sudo apt-get install -y curl git git-flow
 sudo apt-get install -y software-properties-common
 sudo apt-get install -y gnupg2 seahorse
-sudo apt-get install -y apt-file
+sudo apt-get install -y apt-file apt-show-versions
 sudo apt-get install -y zsh-common tmux vim
 sudo apt-get install -y meld
 sudo apt-get install -y python3-full
