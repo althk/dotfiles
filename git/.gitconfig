@@ -22,6 +22,7 @@
 	lg = log -p
 	ll = log --pretty=oneline --graph --abbrev-commit
 	lm = log --pretty=format:'* %s (%h)'
+	lf = log --name-only --pretty=format:'* %s (%h)'
 	patch = !git --no-pager diff --no-color
 	p = push
 	pf = push --force
